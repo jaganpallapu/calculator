@@ -1,0 +1,60 @@
+*{
+    margin: 0; /* headings border */
+    padding: 0;  /* title and border */
+    font-family:"poppins", sans-serif; /* multiple fonts for the headings deep dive inside and inside */
+    box-sizing: border-box; /* which type of box */
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
+    display: flex; /* displays the selected html element as a block-level flexible box model */
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    background:white;
+    padding: 10px;
+    border-radius: 20px; /* this helps in cutting of the edges in the border */
+
+}
+
+.calculator form input{
+    border:0;
+    outline:0;
+    width:60px;
+    height:60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 40px;
+    color:black;
+    cursor:pointer;
+    margin:10px; /* to get the space between all the buttons */
+}
+
+form .display{
+    display:flex;
+    justify-content: flex-end;
+    margin:20px 0; /* top to bottom 20px and left to rigth 0 */
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font: size 45px;
+    box-shadow: none;
+}
+
+form input.equall{
+    width:145px;
+}
+
+form input.operator{
+    color: blue;
+
+}
